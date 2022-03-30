@@ -29,10 +29,10 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="/reservation">Voir les reservations</a>
+          <a class="nav-link" href="reservation">Voir les reservations</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/users">Gerer Utilisateur</a>
+          <a class="nav-link" href="users">Gerer Utilisateur</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/connexion/logout"> Deconnexion</a>

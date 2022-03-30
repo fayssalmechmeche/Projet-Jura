@@ -10,7 +10,7 @@ require_once "Template/Header.php";
       <?php if(isset($validation)):?>
 <div class="alert alert-danger"><?= $validation->listErrors() ?></div>
 <?php endif;?>
-				<form class="login100-form validate-form" action='/projet/public/index.php/inscription/save' method='post'>
+				<form class="login100-form validate-form" action='inscription/save' method='post'>
 					<span class="login100-form-title p-b-26">
                         Inscrivez-vous
 					</span>

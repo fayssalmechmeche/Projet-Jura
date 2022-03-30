@@ -13,6 +13,7 @@ class DashboardAdmin extends BaseController
     {
         $session = session();
         return view('admin');
+        
     }
     public function AfficherReservation()
     {
@@ -20,7 +21,7 @@ class DashboardAdmin extends BaseController
         $data = [
             'nbPersonnes' => $this->modalService->paginate(),
         ];
-        return view('reservation',$data);
+        return view('/reservation',$data);
     }
     public function users(){
         $this->modalClients = new DatabaseModel();
@@ -28,30 +29,33 @@ class DashboardAdmin extends BaseController
             'clients' => $this->modalClients->paginate(),
             
         ];
-        return view('users',$data);
+        return view('/users',$data);
 
     }
     public function update(){
-
+        $this->modalClients = new DatabaseModel();
         $data = [
-            'identifiant'     => $this->request->getVar('name'),
+            
             'mail'    => $this->request->getVar('mail'),
             'nomClient'    => $this->request->getVar('nom'),
             'prenomClient'    => $this->request->getVar('prenom'),
-            'mdp' => password_hash($this->request->getVar('pass'), PASSWORD_DEFAULT),
-            'Admin' =>0
+            
         ];
+        $id = $this->request->getVar('id');  
+        $this->modalClients->update($id,$data);
+        return redirect()->to('/dashboardAdmin/users');
+
     }
 
     public function delete(){
+        $this->modalClients = new DatabaseModel();
+        
+            
+            
+        $id = $this->request->getVar('id');    
+        
+        $this->modalClients->where('idClient',$id)->delete($id);
+        return redirect()->to('/dashboardAdmin/users');
 
-        $data = [
-            'identifiant'     => $this->request->getVar('name'),
-            'mail'    => $this->request->getVar('mail'),
-            'nomClient'    => $this->request->getVar('nom'),
-            'prenomClient'    => $this->request->getVar('prenom'),
-            'mdp' => password_hash($this->request->getVar('pass'), PASSWORD_DEFAULT),
-            'idClient' => 
-        ];
     }
 }

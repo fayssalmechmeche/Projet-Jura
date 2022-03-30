@@ -40,14 +40,12 @@
                                                 <li class="list-inline-item">
                                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong<?= $client['idClient']?>">Modifier</button>
                                                 </li>
-                                                <li class="list-inline-item">
-                                                    <button class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="modal" data-placement="top" title="Delete"><i class="fa fa-trash"></i>Supprimer</button>
-                                                </li>
+                                                
                                             </ul>
                                         </td>
                                     </tr>
-                                    <div class="modal fade" id="exampleModalLong<?= $client['idClient']?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal fade" id="exampleModalLong<?= $client['idClient']?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+     <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLongTitle">Modifier l'utilisateur</h5>
@@ -55,15 +53,20 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
+
       <div class="modal-body">
-        <p>Nom : <input value='<?= $client['nomClient']?>'> </input></p>
-        <p>Prenom : <input value='<?= $client['prenomClient']?>'> </input></p>
-        <p>Mail : <input value='<?= $client['mail']?>'> </input></p>
+      <form method='post'>
+        <p>Nom : <input name='nom' value='<?= $client['nomClient']?>'> </input></p>
+        <p>Prenom : <input name='prenom' value='<?= $client['prenomClient']?>'> </input></p>
+        <p>Mail : <input name='mail' value='<?= $client['mail']?>'> </input></p>
       </div>
       <div class="modal-footer">
+         <input type='hidden' name='id' value="<?= $client['idClient']?>"></input>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" formaction="/DashboardAdmin/update"  >Sauvegarder</button>
+        <button type="submit" class="btn btn-primary" formaction="/DashboardAdmin/update"  >Sauvegarder</button>
+        <button type="submit" class="btn btn-primary" formaction="/DashboardAdmin/delete"  >Supprimer</button>
       </div>
+      </form>
     </div>
   </div>
 </div>

@@ -32,7 +32,7 @@
           <a class="nav-link" href="#">Reservation</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../app/Views/vueConnexion.php">Deconnexion</a>
+          <a class="nav-link" href="/connexion/logout">Deconnexion</a>
         </li>
 
       </ul>
