@@ -12,7 +12,7 @@ require_once "Template/Header.php";
 <?php endif;?>
 				<form class="login100-form validate-form" action='inscription/save' method='post'>
 					<span class="login100-form-title p-b-26">
-                        Inscrivez-vous
+                        Inscrivez-vous ici
 					</span>
 					<span class="login100-form-title p-b-48">
 						<i class="zmdi zmdi-font"></i>
