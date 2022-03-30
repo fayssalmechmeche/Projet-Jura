@@ -41,6 +41,7 @@ $routes->get('dashboardAdmin/delete', 'DashboardAdmin::delete');
 $routes->get('dashboardAdmin/update', 'DashboardAdmin::update');
 
 $routes->get('dashboardAdmin/users', 'DashboardAdmin::users');
+$routes->get('dashboard/reservation', 'DashboardUser::reservation');
 $routes->get('home', 'Home::index');
 $routes->get('dashboardAdmin/reservation', 'DashboardAdmin::AfficherReservation');
 

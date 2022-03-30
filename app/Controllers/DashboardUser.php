@@ -12,4 +12,7 @@ class DashboardUser extends BaseController
         $session = session();
         return view('user');
     }
+    public function reservation(){
+        return view('reservations');
+    }
 }

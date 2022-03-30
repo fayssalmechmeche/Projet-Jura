@@ -29,7 +29,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#">Reservation</a>
+          <a class="nav-link" href="dashboard/reservation">Reservation</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/connexion/logout">Deconnexion</a>

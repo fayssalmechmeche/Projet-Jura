@@ -30,9 +30,7 @@
         <li class="nav-item">
           <a class="nav-link" href="connexion">Connexion</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Reservation</a>
-        </li>
+        
 
       </ul>
     </div>
