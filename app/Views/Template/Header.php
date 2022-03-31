@@ -28,7 +28,7 @@
           <a class="nav-link" href="home">Accueil </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="connexion">Connexion</a>
+          <a class="nav-link" href="connexion">Connexion</a> 
         </li>
         
 

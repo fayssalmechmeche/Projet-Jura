@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use \Core\View;
 use App\Models\ConnexionModel;
+use App\Models\TypeHebergement;
 
 class DashboardUser extends BaseController
 {
@@ -13,6 +14,11 @@ class DashboardUser extends BaseController
         return view('user');
     }
     public function reservation(){
-        return view('reservations');
+        $this->modalReservations = new TypeHebergement();
+        $data = [
+            'hebergements' => $this->modalReservations->paginate(),
+            
+        ];
+        return view('reservations',$data);
     }
 }

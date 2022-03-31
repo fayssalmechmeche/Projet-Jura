@@ -37,13 +37,13 @@ $routes->get('/inscription', 'Inscription::index', ['as' => 'inscription']);
 $routes->get('/inscription/save', 'Inscription::save', ['as' => 'save']);
 $routes->get('/dashboard', 'DashboardUser::index' ,['as' => 'dashboard']);
 $routes->get('dashboardAdmin/', 'DashboardAdmin::index' ,['as' => 'dashboardAdmin']);
-$routes->get('dashboardAdmin/delete', 'DashboardAdmin::delete');
-$routes->get('dashboardAdmin/update', 'DashboardAdmin::update');
+$routes->get('dashboardAdmin/delete', 'DashboardAdmin::delete',['as' => 'delete']);
+$routes->get('dashboardAdmin/update', 'DashboardAdmin::update',['as' => 'update']);
 
-$routes->get('dashboardAdmin/users', 'DashboardAdmin::users');
-$routes->get('dashboard/reservation', 'DashboardUser::reservation');
+$routes->get('dashboardAdmin/users', 'DashboardAdmin::users',['as' => 'users']);
+$routes->get('dashboard/reservation', 'DashboardUser::reservation',['as' => 'reservation']);
 $routes->get('home', 'Home::index');
-$routes->get('dashboardAdmin/reservation', 'DashboardAdmin::AfficherReservation');
+$routes->get('dashboardAdmin/reservation', 'DashboardAdmin::AfficherReservation',['as' => 'reservations']);
 
 
 

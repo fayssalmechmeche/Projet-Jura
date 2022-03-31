@@ -37,7 +37,8 @@ class Connexion extends BaseController
                 $session->set($ses_data);
                 if ($data['Admin']== 0){
                     
-                    return redirect()->to('/dashboard');
+                    return redirect()->to('/dashboard/reservation');
+                    
                      
                 }else{
                     return redirect()->to('dashboardAdmin/');

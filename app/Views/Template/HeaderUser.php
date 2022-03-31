@@ -18,18 +18,18 @@
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Projet Jura</a>
+    <a class="navbar-brand" href="<?= route_to('reservation')?>">Projet Jura</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="">Accueil </a>
+          <a class="nav-link" href="<?= route_to('reservation')?>">Accueil </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="dashboard/reservation">Reservation</a>
+          <a class="nav-link" href="<?= route_to('reservation')?>">Reservation</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/connexion/logout">Deconnexion</a>

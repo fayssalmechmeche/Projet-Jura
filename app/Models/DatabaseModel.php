@@ -6,6 +6,7 @@ use CodeIgniter\Model;
 use PDO;
 use PDOException;
 
+
 class DatabaseModel extends Model
 {
 

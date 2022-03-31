@@ -6,9 +6,9 @@ use CodeIgniter\Model;
 use PDO;
 use PDOException;
 
-class DatabaseModel extends Model
+class TypeHebergement extends Model
 {
 
-    protected $table = 'TypeHebergement';
+    protected $table = 'typeHebergement';
     protected $allowedFields = ['libelle', 'descriptionHebergement', 'batiment'];
 }

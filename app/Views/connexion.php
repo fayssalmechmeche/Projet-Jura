@@ -23,7 +23,7 @@ require_once "Template/Header.php" ?>
 
           <div class="wrap-input100 validate-input">
             <input class="input100" type="text" name="name" value="<?= set_value('name') ?>">
-            <span class="focus-input100" data-placeholder="Entrez votre identifiant..."></span>
+            <span class="focus-input100" ></span>
           </div>
 
           <div class="wrap-input100 validate-input" data-validate="Enter password">
@@ -31,7 +31,7 @@ require_once "Template/Header.php" ?>
               <i class="zmdi zmdi-eye"></i>
             </span>
             <input class="input100" type="password" name="pass">
-            <span class="focus-input100" data-placeholder="Entrez votre mot de passe ..."></span>
+            <span class="focus-input100"></span>
           </div>
 
           <div class="container-login100-form-btn">
