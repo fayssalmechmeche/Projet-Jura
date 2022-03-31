@@ -215,3 +215,107 @@ CRITICAL - 2022-03-31 15:46:33 --> Cannot add or update a child row: a foreign k
 #12 C:\wamp\www\projet\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #13 C:\wamp\www\projet\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp\\www\\pro...')
 #14 {main}
+CRITICAL - 2022-03-31 16:31:49 --> Undefined property: App\Controllers\DashboardUser::$model
+#0 C:\wamp\www\projet\app\Controllers\DashboardUser.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\wamp\\www\\pro...', 17)
+#1 C:\wamp\www\projet\system\CodeIgniter.php(825): App\Controllers\DashboardUser->index()
+#2 C:\wamp\www\projet\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardUser))
+#3 C:\wamp\www\projet\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\projet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp\www\projet\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp\\www\\pro...')
+#6 {main}
+CRITICAL - 2022-03-31 16:39:05 --> Undefined property: App\Controllers\DashboardUser::$model
+#0 C:\wamp\www\projet\app\Controllers\DashboardUser.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\wamp\\www\\pro...', 17)
+#1 C:\wamp\www\projet\system\CodeIgniter.php(825): App\Controllers\DashboardUser->index()
+#2 C:\wamp\www\projet\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardUser))
+#3 C:\wamp\www\projet\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\projet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp\www\projet\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp\\www\\pro...')
+#6 {main}
+CRITICAL - 2022-03-31 16:40:13 --> Undefined variable $session
+#0 C:\wamp\www\projet\app\Views\user.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\wamp\\www\\pro...', 41)
+#1 C:\wamp\www\projet\system\View\View.php(210): include('C:\\wamp\\www\\pro...')
+#2 C:\wamp\www\projet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp\www\projet\system\Common.php(1089): CodeIgniter\View\View->render('user', Array, true)
+#4 C:\wamp\www\projet\app\Controllers\DashboardUser.php(16): view('user')
+#5 C:\wamp\www\projet\system\CodeIgniter.php(825): App\Controllers\DashboardUser->index()
+#6 C:\wamp\www\projet\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardUser))
+#7 C:\wamp\www\projet\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp\www\projet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp\www\projet\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp\\www\\pro...')
+#10 {main}
+CRITICAL - 2022-03-31 16:41:17 --> Undefined variable $hebergements
+#0 C:\wamp\www\projet\app\Views\home.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\wamp\\www\\pro...', 48)
+#1 C:\wamp\www\projet\system\View\View.php(210): include('C:\\wamp\\www\\pro...')
+#2 C:\wamp\www\projet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp\www\projet\system\Common.php(1089): CodeIgniter\View\View->render('home', Array, true)
+#4 C:\wamp\www\projet\app\Controllers\Home.php(12): view('home')
+#5 C:\wamp\www\projet\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#6 C:\wamp\www\projet\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\wamp\www\projet\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp\www\projet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp\www\projet\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp\\www\\pro...')
+#10 {main}
+CRITICAL - 2022-03-31 16:42:26 --> Undefined variable $session
+#0 C:\wamp\www\projet\app\Views\user.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\wamp\\www\\pro...', 41)
+#1 C:\wamp\www\projet\system\View\View.php(210): include('C:\\wamp\\www\\pro...')
+#2 C:\wamp\www\projet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp\www\projet\system\Common.php(1089): CodeIgniter\View\View->render('user', Array, true)
+#4 C:\wamp\www\projet\app\Controllers\DashboardUser.php(16): view('user')
+#5 C:\wamp\www\projet\system\CodeIgniter.php(825): App\Controllers\DashboardUser->index()
+#6 C:\wamp\www\projet\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardUser))
+#7 C:\wamp\www\projet\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp\www\projet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp\www\projet\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp\\www\\pro...')
+#10 {main}
+CRITICAL - 2022-03-31 16:42:48 --> Undefined variable $session
+#0 C:\wamp\www\projet\app\Views\user.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\wamp\\www\\pro...', 41)
+#1 C:\wamp\www\projet\system\View\View.php(210): include('C:\\wamp\\www\\pro...')
+#2 C:\wamp\www\projet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp\www\projet\system\Common.php(1089): CodeIgniter\View\View->render('user', Array, true)
+#4 C:\wamp\www\projet\app\Controllers\DashboardUser.php(16): view('user')
+#5 C:\wamp\www\projet\system\CodeIgniter.php(825): App\Controllers\DashboardUser->index()
+#6 C:\wamp\www\projet\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardUser))
+#7 C:\wamp\www\projet\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp\www\projet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp\www\projet\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp\\www\\pro...')
+#10 {main}
+CRITICAL - 2022-03-31 16:43:39 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\Session\Session given, called in C:\wamp\www\projet\app\Controllers\Connexion.php on line 42
+#0 C:\wamp\www\projet\app\Controllers\Connexion.php(42): view('/dashboard/user', Object(CodeIgniter\Session\Session))
+#1 C:\wamp\www\projet\system\CodeIgniter.php(825): App\Controllers\Connexion->auth()
+#2 C:\wamp\www\projet\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#3 C:\wamp\www\projet\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\projet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp\www\projet\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp\\www\\pro...')
+#6 {main}
+CRITICAL - 2022-03-31 16:44:24 --> Invalid file: /dashboard/user.php
+#0 C:\wamp\www\projet\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/dashboard/user...')
+#1 C:\wamp\www\projet\system\Common.php(1089): CodeIgniter\View\View->render('/dashboard/user', Array, true)
+#2 C:\wamp\www\projet\app\Controllers\Connexion.php(42): view('/dashboard/user')
+#3 C:\wamp\www\projet\system\CodeIgniter.php(825): App\Controllers\Connexion->auth()
+#4 C:\wamp\www\projet\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp\www\projet\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp\www\projet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp\www\projet\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp\\www\\pro...')
+#8 {main}
+CRITICAL - 2022-03-31 16:44:30 --> Invalid file: /dashboard/user.php
+#0 C:\wamp\www\projet\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/dashboard/user...')
+#1 C:\wamp\www\projet\system\Common.php(1089): CodeIgniter\View\View->render('/dashboard/user', Array, true)
+#2 C:\wamp\www\projet\app\Controllers\Connexion.php(42): view('/dashboard/user')
+#3 C:\wamp\www\projet\system\CodeIgniter.php(825): App\Controllers\Connexion->auth()
+#4 C:\wamp\www\projet\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#5 C:\wamp\www\projet\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp\www\projet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp\www\projet\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp\\www\\pro...')
+#8 {main}
+CRITICAL - 2022-03-31 16:48:05 --> Undefined variable $session
+#0 C:\wamp\www\projet\app\Views\user.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\wamp\\www\\pro...', 41)
+#1 C:\wamp\www\projet\system\View\View.php(210): include('C:\\wamp\\www\\pro...')
+#2 C:\wamp\www\projet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp\www\projet\system\Common.php(1089): CodeIgniter\View\View->render('user', Array, true)
+#4 C:\wamp\www\projet\app\Controllers\DashboardUser.php(16): view('user')
+#5 C:\wamp\www\projet\system\CodeIgniter.php(825): App\Controllers\DashboardUser->index()
+#6 C:\wamp\www\projet\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardUser))
+#7 C:\wamp\www\projet\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp\www\projet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp\www\projet\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp\\www\\pro...')
+#10 {main}

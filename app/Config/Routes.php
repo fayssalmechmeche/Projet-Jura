@@ -32,18 +32,18 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('/connexion', 'Connexion::index',['as' => 'connexion']);
+$routes->get('/connexion', 'Connexion::index', ['as' => 'connexion']);
 $routes->get('/inscription', 'Inscription::index', ['as' => 'inscription']);
 $routes->get('/inscription/save', 'Inscription::save', ['as' => 'save']);
-$routes->get('/dashboard', 'DashboardUser::index' ,['as' => 'dashboard']);
-$routes->get('dashboardAdmin/', 'DashboardAdmin::index' ,['as' => 'dashboardAdmin']);
-$routes->get('dashboardAdmin/delete', 'DashboardAdmin::delete',['as' => 'delete']);
-$routes->get('dashboardAdmin/update', 'DashboardAdmin::update',['as' => 'update']);
+$routes->get('/dashboard', 'DashboardUser::index', ['as' => 'dashboard']);
+$routes->get('dashboardAdmin/', 'DashboardAdmin::index', ['as' => 'dashboardAdmin']);
+$routes->get('dashboardAdmin/delete', 'DashboardAdmin::delete', ['as' => 'delete']);
+$routes->get('dashboardAdmin/update', 'DashboardAdmin::update', ['as' => 'update']);
 
-$routes->get('dashboardAdmin/users', 'DashboardAdmin::users',['as' => 'users']);
-$routes->get('dashboard/reservation', 'DashboardUser::reservation',['as' => 'reservation']);
-$routes->get('home', 'Home::index');
-$routes->get('dashboardAdmin/reservation', 'DashboardAdmin::AfficherReservation',['as' => 'reservations']);
+$routes->get('dashboardAdmin/users', 'DashboardAdmin::users', ['as' => 'users']);
+$routes->get('dashboard/reservation', 'DashboardUser::reservation', ['as' => 'reservation']);
+$routes->get('home', 'Home::index', ['as' => 'home']);
+$routes->get('dashboardAdmin/reservation', 'DashboardAdmin::AfficherReservation', ['as' => 'reservations']);
 
 
 

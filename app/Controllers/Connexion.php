@@ -7,10 +7,10 @@ use App\Models\DatabaseModel;
 
 class Connexion extends BaseController
 {
-    
+
     public function index()
     {
-        
+
         helper(['form']);
         return view('connexion');
     }
@@ -21,12 +21,12 @@ class Connexion extends BaseController
         $model = new DatabaseModel();
         $identifiant = $this->request->getVar('name');
         $password = $this->request->getVar('pass');
-        
+
         $data = $model->where('identifiant', $identifiant)->first();
-        if($data){
+        if ($data) {
             $pass = $data['mdp'];
             $verify_pass = password_verify($password, $pass);
-            if($verify_pass){
+            if ($verify_pass) {
                 $ses_data = [
                     'idClient'       => $data['idClient'],
                     'nomClient'     => $data['nomClient'],
@@ -35,35 +35,28 @@ class Connexion extends BaseController
                     'logged_in'     => TRUE
                 ];
                 $session->set($ses_data);
-                if ($data['Admin']== 0){
-                    
-                    return redirect()->to('/dashboard/reservation');
-                    
-                     
-                }else{
+                if ($data['Admin'] == 0) {
+                    $model = new DatabaseModel();
+
+
+                    return redirect()->to('dashboardUser/');
+                } else {
                     return redirect()->to('dashboardAdmin/');
                 }
-                
-            }else{
+            } else {
                 $session->setFlashdata('msg', 'Mot de passe incorrect');
                 return redirect()->to('/connexion');
             }
-        }else{
+        } else {
             $session->setFlashdata('msg', 'identifiant non trouvé');
             return redirect()->to('connexion');
         }
     }
-  
+
     public function logout()
     {
         $session = session();
         $session->destroy();
         return redirect()->to('/connexion');
     }
-
-    
-  
-    
-    
-    
 }
