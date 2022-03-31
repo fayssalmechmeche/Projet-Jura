@@ -39,7 +39,7 @@ class Connexion extends BaseController
                     $model = new DatabaseModel();
 
 
-                    return redirect()->to('dashboardUser/');
+                    return redirect()->to('dashboard/');
                 } else {
                     return redirect()->to('dashboardAdmin/');
                 }
