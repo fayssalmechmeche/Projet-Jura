@@ -10,5 +10,5 @@ class TypeHebergement extends Model
 {
 
     protected $table = 'typeHebergement';
-    protected $allowedFields = ['libelle', 'descriptionHebergement', 'batiment'];
+    protected $allowedFields = ['libelle', 'descriptionHebergement', 'batiment', 'idHebergement', 'idClient'];
 }

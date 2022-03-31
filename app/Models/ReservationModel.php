@@ -10,6 +10,6 @@ class ReservationModel extends Model
 {
 
     protected $table = 'Reservation';
-    
-    protected $allowedFields = ['dateArrivee', 'dateDepart', 'nbPersonne', 'pension', '', ''];
+
+    protected $allowedFields = ['dateArrivee', 'dateDepart', 'nbPersonne', 'pension', 'mail', 'dateReservation', 'idClient', 'idHebergement'];
 }

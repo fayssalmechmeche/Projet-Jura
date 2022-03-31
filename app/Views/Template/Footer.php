@@ -1,10 +1,15 @@
-
-
 <footer class="bg-primary text-center text-white">
   <!-- Grid container -->
   <div class="container p-4">
 
+    <script>
+      var myModal = document.getElementById('myModal')
+      var myInput = document.getElementById('myInput')
 
+      myModal.addEventListener('shown.bs.modal', function() {
+        myInput.focus()
+      })
+    </script>
 
     <!-- Section: Text -->
     <section class="mb-4">
@@ -28,4 +33,5 @@
 </footer>
 <!-- Footer -->
 </body>
+
 </html>
