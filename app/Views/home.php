@@ -1,6 +1,3 @@
-<?php
-require_once "Template/Header.php";
-?>
 <!doctype html>
 <html lang="fr">
 
@@ -33,6 +30,9 @@ require_once "Template/Header.php";
 </head>
 
 <body>
+    <?php
+    require_once "Template/Header.php";
+    ?>
     <?php $session = \Config\Services::session(); ?>
     <?php if ($session->getFlashdata('success')) { ?>
         <div class="alert alert-success alert-dismissable text-center" role="alert">
