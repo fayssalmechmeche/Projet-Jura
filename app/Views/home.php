@@ -33,13 +33,7 @@
     <?php
     require_once "Template/Header.php";
     ?>
-    <?php $session = \Config\Services::session(); ?>
-    <?php if ($session->getFlashdata('success')) { ?>
-        <div class="alert alert-success alert-dismissable text-center" role="alert">
-            <?= session()->getFlashdata('success') ?>
-            <button type="button" class="btn-close center" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-    <?php } ?>
+
     <div class="container-fluid my-5">
         <h1 class="text-center fw-bold display-1 mb-5">Les <span class="text-danger">Séjours</span></h1>
         <div class="row">
