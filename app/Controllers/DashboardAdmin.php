@@ -4,8 +4,9 @@ namespace App\Controllers;
 
 use \Core\View;
 use App\Models\ConnexionModel;
-use App\Models\ReservationModel;
 use App\Models\DatabaseModel;
+use App\Models\ReservationModel;
+use App\Models\TypeHebergement;
 
 class DashboardAdmin extends BaseController
 {
@@ -17,9 +18,13 @@ class DashboardAdmin extends BaseController
     }
     public function AfficherReservation()
     {
-        $this->modalService = new ReservationModel();
+        $this->modalType = new TypeHebergement();
+        $this->modalClient = new DatabaseModel();
+        $this->modalReservation = new ReservationModel();
         $data = [
-            'nbPersonnes' => $this->modalService->paginate(),
+            'nbPersonnes' => $this->modalReservation->paginate(),
+            'clients' => $this->modalClient->paginate(),
+            'hebergements' => $this->modalType->paginate(),
         ];
         return view('/reservation',$data);
     }
@@ -56,6 +61,21 @@ class DashboardAdmin extends BaseController
         
         $this->modalClients->where('idClient',$id)->delete($id);
         return redirect()->to('/dashboardAdmin/users');
+
+    }
+    public function save(){
+        $this->modalClients = new DatabaseModel();
+        $this->modalType = new TypeHebergement();
+        $data = [
+            
+            'libelle'    => $this->request->getVar('libelle'),
+            'descriptionHebergement'    => $this->request->getVar('descriptionHebergement'),
+            'batiment'    => $this->request->getVar('batiment'),
+            'image'    => $this->request->getVar('image'),
+        ];
+          
+        $this->modalType->save($data);
+        return redirect()->to('/dashboardAdmin/reservation');
 
     }
 }

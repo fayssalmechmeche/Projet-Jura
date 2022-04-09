@@ -42,7 +42,7 @@
                     <?php foreach ($hebergements as $hebergement) : ?>
                         <div class="item mb-4">
                             <div class="card border-0 shadow">
-                                <img src="https://www.lemoniteur.fr/mediatheque/0/6/3/001989360_620x393_c.jpg" alt="" class="card-img-top">
+                                <img src="<?= $hebergement['image'] ?>" alt="" class="card-img-top">
                                 <div class="card-body">
                                     <div class="card-title text-center">
                                         <h4><?= $hebergement['libelle'] ?> </h4>

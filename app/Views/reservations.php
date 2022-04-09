@@ -34,12 +34,7 @@ require_once "Template/HeaderUser.php";
 
 <body>
     <?php $session = \Config\Services::session(); ?>
-    <?php if ($session->getFlashdata('success')) { ?>
-        <div class="alert alert-success alert-dismissable text-center" role="alert">
-            <?= session()->getFlashdata('success') ?>
-            <button type="button" class="btn-close center" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-    <?php } ?>
+  
     <div class="container-fluid my-5">
         <h1 class="text-center fw-bold display-1 mb-5">Les <span class="text-danger">Séjours</span></h1>
         <div class="row">
@@ -48,7 +43,7 @@ require_once "Template/HeaderUser.php";
                     <?php foreach ($hebergements as $hebergement) : ?>
                         <div class="item mb-4">
                             <div class="card border-0 shadow">
-                                <img src="https://www.lemoniteur.fr/mediatheque/0/6/3/001989360_620x393_c.jpg" alt="" class="card-img-top">
+                                <img src="<?= $hebergement['image'] ?>" alt="" class="card-img-top">
                                 <div class="card-body">
                                     <div class="card-title text-center">
                                         <h4><?= $hebergement['libelle'] ?> </h4>

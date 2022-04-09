@@ -14,8 +14,9 @@
     require_once "Template/HeaderAdmin.php";
     ?>
 
-
-
+<br>
+<h1>Les réservations effectuées </h1>
+<br>
 
     <table class="table table-dark">
         <thead>
@@ -43,7 +44,39 @@
         </tr>
         </tbody>
     </table>
+    <br>
+<h1>Ajouter une réservation </h1>
+<br>
 
+                        <div class="modal-body">
+                            <form method='post'>
+                                <p>Libelle : <input name='libelle' value=''> </input></p>
+                                <p>Description: <input name='descriptionHebergement' value=''> </input></p>
+                                <p>Image: <input name='image' value=''> </input></p>
+                                <p>Batiment :
+                                    <select name="batiment" class="form-select" aria-label="Default select example">
+                                    <option selected=></option>
+                                   <option>Batiment A</option>
+                                    <option>Batiment B</option>
+                                    <option>Batiment C</option>
+                                    <option>Batiment D</option>
+
+                                    </select>
+                                </p>
+                    
+                                <div class="modal-footer">
+                                    <input type='hidden' name='id' ></input>
+                                    <input type='hidden' name='idClient'></input>
+                                    <input type='hidden' name='idHebergement' ></input>
+                            
+                                    <button type="submit" class="btn btn-primary" formaction="/DashboardAdmin/save">Reserver</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                
+        
 </body>
 
 </html>
