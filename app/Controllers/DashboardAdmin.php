@@ -12,8 +12,15 @@ class DashboardAdmin extends BaseController
 {
     public function index()
     {
+        $this->modalReservations = new TypeHebergement();
+        $this->modalClient = new DatabaseModel();
+        $data = [
+            'hebergements' => $this->modalReservations->paginate(),
+            'clients' => $this->modalClient->paginate(),
+
+        ];
         $session = session();
-        return view('admin');
+        return view('admin',$data);
         
     }
     public function AfficherReservation()
@@ -78,4 +85,29 @@ class DashboardAdmin extends BaseController
         return redirect()->to('/dashboardAdmin/reservation');
 
     }
+    public function deleteHeber(){
+        $this->modalType = new TypeHebergement();
+        
+            
+            
+        $id = $this->request->getVar('idHebergement');    
+        
+        $this->modalType->where('idHebergement',$id)->delete($id);
+        return redirect()->to('/dashboardAdmin/');
+    }
+    public function updateHeber(){
+        $this->modalType = new TypeHebergement();
+        $data = [
+            
+            'libelle'    => $this->request->getVar('libelle'),
+            'descriptionHebergement'    => $this->request->getVar('descriptionHebergement'),
+            'batiment'    => $this->request->getVar('batiment'),
+            'image'    => $this->request->getVar('image'),
+        ];
+        $id = $this->request->getVar('idHebergement');  
+        $this->modalType->update($id,$data);
+        return redirect()->to('/dashboardAdmin/');
+
+    }
+
 }

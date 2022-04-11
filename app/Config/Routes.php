@@ -39,6 +39,7 @@ $routes->get('/dashboard', 'DashboardUser::index', ['as' => 'dashboard']);
 $routes->get('dashboardAdmin/', 'DashboardAdmin::index', ['as' => 'dashboardAdmin']);
 $routes->get('dashboardAdmin/delete', 'DashboardAdmin::delete', ['as' => 'delete']);
 $routes->get('dashboardAdmin/update', 'DashboardAdmin::update', ['as' => 'update']);
+$routes->get('dashboardAdmin/deleteHeber', 'DashboardAdmin::deleteHeber', ['as' => 'deleteHeber']);
 
 $routes->get('dashboardAdmin/users', 'DashboardAdmin::users', ['as' => 'users']);
 $routes->get('dashboard/reservation', 'DashboardUser::reservation', ['as' => 'reservation']);
