@@ -45,7 +45,7 @@
         </tbody>
     </table>
     <br>
-<h1>Ajouter une réservation </h1>
+<h1>Ajouter une chambre </h1>
 <br>
 
                         <div class="modal-body">
