@@ -34,7 +34,7 @@ require_once "Template/HeaderUser.php";
 
 <body>
     <?php $session = \Config\Services::session(); ?>
-  
+
     <div class="container-fluid my-5">
         <h1 class="text-center fw-bold display-1 mb-5">Les <span class="text-danger">Séjours</span></h1>
         <div class="row">
@@ -47,6 +47,7 @@ require_once "Template/HeaderUser.php";
                                 <div class="card-body">
                                     <div class="card-title text-center">
                                         <h4><?= $hebergement['libelle'] ?> </h4>
+                                        <p><?= $hebergement['prix'] ?>Є </p>
 
                                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal<?= $hebergement['idHebergement'] ?>">
                                             Reserver

@@ -11,5 +11,5 @@ class TypeHebergement extends Model
 
     protected $table = 'typeHebergement';
     protected $primaryKey = 'idHebergement';
-    protected $allowedFields = ['libelle', 'descriptionHebergement', 'batiment', 'idClient','image'];
+    protected $allowedFields = ['libelle', 'descriptionHebergement', 'batiment', 'idClient', 'image', 'prix'];
 }

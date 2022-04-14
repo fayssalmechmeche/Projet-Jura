@@ -1,0 +1,119 @@
+ERROR - 2022-04-13 06:49:19 --> Error connecting to the database: Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu
+CRITICAL - 2022-04-13 06:49:19 --> Unable to connect to the database.
+Main connection [MySQLi]: Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu
+#0 C:\wamp\www\projet\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\wamp\www\projet\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\wamp\www\projet\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\wamp\www\projet\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\wamp\www\projet\app\Controllers\Connexion.php(25): CodeIgniter\BaseModel->first()
+#5 C:\wamp\www\projet\system\CodeIgniter.php(825): App\Controllers\Connexion->auth()
+#6 C:\wamp\www\projet\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#7 C:\wamp\www\projet\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp\www\projet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp\www\projet\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp\\www\\pro...')
+#10 {main}
+CRITICAL - 2022-04-13 07:02:36 --> Invalid file: inscription/.php
+#0 C:\wamp\www\projet\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('inscription/.ph...')
+#1 C:\wamp\www\projet\system\Common.php(1089): CodeIgniter\View\View->render('inscription/', Array, true)
+#2 C:\wamp\www\projet\app\Controllers\Inscription.php(46): view('inscription/', Array)
+#3 C:\wamp\www\projet\system\CodeIgniter.php(825): App\Controllers\Inscription->save()
+#4 C:\wamp\www\projet\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+#5 C:\wamp\www\projet\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp\www\projet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp\www\projet\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp\\www\\pro...')
+#8 {main}
+CRITICAL - 2022-04-13 07:08:55 --> Invalid file: /inscription/save.php
+#0 C:\wamp\www\projet\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/inscription/sa...')
+#1 C:\wamp\www\projet\system\Common.php(1089): CodeIgniter\View\View->render('/inscription/sa...', Array, true)
+#2 C:\wamp\www\projet\app\Controllers\Inscription.php(46): view('/inscription/sa...', Array)
+#3 C:\wamp\www\projet\system\CodeIgniter.php(825): App\Controllers\Inscription->save()
+#4 C:\wamp\www\projet\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+#5 C:\wamp\www\projet\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp\www\projet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp\www\projet\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp\\www\\pro...')
+#8 {main}
+CRITICAL - 2022-04-13 07:46:18 --> Call to undefined function set_value()
+#0 C:\wamp\www\projet\system\View\View.php(210): include()
+#1 C:\wamp\www\projet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp\www\projet\system\Common.php(1089): CodeIgniter\View\View->render('user', Array, true)
+#3 C:\wamp\www\projet\app\Controllers\DashboardUser.php(16): view('user')
+#4 C:\wamp\www\projet\system\CodeIgniter.php(825): App\Controllers\DashboardUser->index()
+#5 C:\wamp\www\projet\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardUser))
+#6 C:\wamp\www\projet\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\projet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp\www\projet\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp\\www\\pro...')
+#9 {main}
+CRITICAL - 2022-04-13 07:47:37 --> Call to undefined function set_value()
+#0 C:\wamp\www\projet\system\View\View.php(210): include()
+#1 C:\wamp\www\projet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp\www\projet\system\Common.php(1089): CodeIgniter\View\View->render('user', Array, true)
+#3 C:\wamp\www\projet\app\Controllers\DashboardUser.php(17): view('user', Array)
+#4 C:\wamp\www\projet\system\CodeIgniter.php(825): App\Controllers\DashboardUser->index()
+#5 C:\wamp\www\projet\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardUser))
+#6 C:\wamp\www\projet\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\projet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp\www\projet\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp\\www\\pro...')
+#9 {main}
+CRITICAL - 2022-04-13 07:47:38 --> Call to undefined function set_value()
+#0 C:\wamp\www\projet\system\View\View.php(210): include()
+#1 C:\wamp\www\projet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp\www\projet\system\Common.php(1089): CodeIgniter\View\View->render('user', Array, true)
+#3 C:\wamp\www\projet\app\Controllers\DashboardUser.php(17): view('user', Array)
+#4 C:\wamp\www\projet\system\CodeIgniter.php(825): App\Controllers\DashboardUser->index()
+#5 C:\wamp\www\projet\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardUser))
+#6 C:\wamp\www\projet\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\projet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp\www\projet\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp\\www\\pro...')
+#9 {main}
+CRITICAL - 2022-04-13 07:57:46 --> Undefined variable $logins
+#0 C:\wamp\www\projet\app\Views\user.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\wamp\\www\\pro...', 55)
+#1 C:\wamp\www\projet\system\View\View.php(210): include('C:\\wamp\\www\\pro...')
+#2 C:\wamp\www\projet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp\www\projet\system\Common.php(1089): CodeIgniter\View\View->render('user', Array, true)
+#4 C:\wamp\www\projet\app\Controllers\DashboardUser.php(17): view('user', Array)
+#5 C:\wamp\www\projet\system\CodeIgniter.php(825): App\Controllers\DashboardUser->index()
+#6 C:\wamp\www\projet\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardUser))
+#7 C:\wamp\www\projet\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp\www\projet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp\www\projet\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp\\www\\pro...')
+#10 {main}
+CRITICAL - 2022-04-13 07:58:52 --> Undefined property: App\Controllers\DashboardUser::$modal
+#0 C:\wamp\www\projet\app\Controllers\DashboardUser.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\wamp\\www\\pro...', 17)
+#1 C:\wamp\www\projet\system\CodeIgniter.php(825): App\Controllers\DashboardUser->index()
+#2 C:\wamp\www\projet\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardUser))
+#3 C:\wamp\www\projet\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\projet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp\www\projet\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp\\www\\pro...')
+#6 {main}
+CRITICAL - 2022-04-13 07:59:03 --> Undefined property: App\Controllers\DashboardUser::$modal
+#0 C:\wamp\www\projet\app\Controllers\DashboardUser.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\wamp\\www\\pro...', 17)
+#1 C:\wamp\www\projet\system\CodeIgniter.php(825): App\Controllers\DashboardUser->index()
+#2 C:\wamp\www\projet\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardUser))
+#3 C:\wamp\www\projet\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\projet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp\www\projet\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp\\www\\pro...')
+#6 {main}
+CRITICAL - 2022-04-13 07:59:30 --> Undefined property: App\Controllers\DashboardUser::$modal
+#0 C:\wamp\www\projet\app\Controllers\DashboardUser.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\wamp\\www\\pro...', 18)
+#1 C:\wamp\www\projet\system\CodeIgniter.php(825): App\Controllers\DashboardUser->index()
+#2 C:\wamp\www\projet\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardUser))
+#3 C:\wamp\www\projet\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\projet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp\www\projet\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp\\www\\pro...')
+#6 {main}
+CRITICAL - 2022-04-13 08:00:35 --> Undefined property: App\Controllers\DashboardUser::$modal
+#0 C:\wamp\www\projet\app\Controllers\DashboardUser.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\wamp\\www\\pro...', 18)
+#1 C:\wamp\www\projet\system\CodeIgniter.php(825): App\Controllers\DashboardUser->index()
+#2 C:\wamp\www\projet\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardUser))
+#3 C:\wamp\www\projet\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\projet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp\www\projet\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp\\www\\pro...')
+#6 {main}
+CRITICAL - 2022-04-13 08:18:41 --> Undefined property: App\Controllers\DashboardUser::$modal
+#0 C:\wamp\www\projet\app\Controllers\DashboardUser.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\wamp\\www\\pro...', 111)
+#1 C:\wamp\www\projet\system\CodeIgniter.php(825): App\Controllers\DashboardUser->update()
+#2 C:\wamp\www\projet\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardUser))
+#3 C:\wamp\www\projet\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\projet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp\www\projet\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp\\www\\pro...')
+#6 {main}

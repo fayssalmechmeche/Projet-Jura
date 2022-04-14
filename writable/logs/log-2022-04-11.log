@@ -265,3 +265,18 @@ CRITICAL - 2022-04-11 08:39:30 --> Undefined property: App\Controllers\Dashboard
 #4 /home/fmechmeche/Documents/projet/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #5 /home/fmechmeche/Documents/projet/system/Commands/Server/rewrite.php(43): require_once('/home/fmechmech...')
 #6 {main}
+ERROR - 2022-04-11 15:12:51 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Hôte inconnu. 
+CRITICAL - 2022-04-11 15:12:51 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Hôte inconnu. 
+#0 C:\wamp\www\projet\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\wamp\www\projet\system\Database\BaseBuilder.php(1913): CodeIgniter\Database\BaseConnection->query('UPDATE `typeHeb...', Array, false)
+#2 C:\wamp\www\projet\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#3 C:\wamp\www\projet\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#4 C:\wamp\www\projet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#5 C:\wamp\www\projet\app\Controllers\DashboardAdmin.php(108): CodeIgniter\Model->update('5', Array)
+#6 C:\wamp\www\projet\system\CodeIgniter.php(825): App\Controllers\DashboardAdmin->updateHeber()
+#7 C:\wamp\www\projet\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardAdmin))
+#8 C:\wamp\www\projet\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\projet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\wamp\www\projet\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp\\www\\pro...')
+#11 {main}

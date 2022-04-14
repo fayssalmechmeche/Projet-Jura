@@ -23,7 +23,7 @@ require_once "Template/Header.php" ?>
 
           <div class="wrap-input100 validate-input">
             <input class="input100" type="text" name="name" value="<?= set_value('name') ?>">
-            <span class="focus-input100" ></span>
+            <span class="focus-input100"></span>
           </div>
 
           <div class="wrap-input100 validate-input" data-validate="Enter password">
@@ -60,10 +60,9 @@ require_once "Template/Header.php" ?>
 
   <div id="dropDownSelect1"></div>
 
-
 </body>
-
-</html>
 
 <?php
 require_once "Template/Footer.php" ?>
+
+</html>

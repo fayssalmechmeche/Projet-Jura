@@ -1,0 +1,24 @@
+CRITICAL - 2022-04-02 16:34:04 --> Undefined variable $hebergements
+#0 C:\wamp\www\projet\app\Views\admin.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\wamp\\www\\pro...', 42)
+#1 C:\wamp\www\projet\system\View\View.php(210): include('C:\\wamp\\www\\pro...')
+#2 C:\wamp\www\projet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp\www\projet\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\wamp\www\projet\app\Controllers\DashboardAdmin.php(15): view('admin')
+#5 C:\wamp\www\projet\system\CodeIgniter.php(825): App\Controllers\DashboardAdmin->index()
+#6 C:\wamp\www\projet\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardAdmin))
+#7 C:\wamp\www\projet\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp\www\projet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp\www\projet\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp\\www\\pro...')
+#10 {main}
+CRITICAL - 2022-04-02 16:35:02 --> Undefined variable $hebergements
+#0 C:\wamp\www\projet\app\Views\admin.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\wamp\\www\\pro...', 42)
+#1 C:\wamp\www\projet\system\View\View.php(210): include('C:\\wamp\\www\\pro...')
+#2 C:\wamp\www\projet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp\www\projet\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\wamp\www\projet\app\Controllers\DashboardAdmin.php(15): view('admin')
+#5 C:\wamp\www\projet\system\CodeIgniter.php(825): App\Controllers\DashboardAdmin->index()
+#6 C:\wamp\www\projet\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardAdmin))
+#7 C:\wamp\www\projet\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp\www\projet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp\www\projet\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp\\www\\pro...')
+#10 {main}

@@ -9,11 +9,18 @@ use App\Models\TypeHebergement;
 
 class DashboardUser extends BaseController
 {
+    public function __construct()
+    {
+    }
     public function index()
     {
+        $this->modal = new DatabaseModel();
 
-        $session = session();
-        return view('user');
+        $session = \Config\Services::session();
+        $id = $session->get('idClient');
+        $data['logins'] = $this->modal->find($id);
+        $data['validation'] = $this->validator;
+        return view('user', $data);
     }
     public function reservation()
     {
@@ -58,5 +65,63 @@ class DashboardUser extends BaseController
 
         $session->setFlashdata('success', 'Reservation effectuée');
         return redirect()->to(route_to('reservation'));
+    }
+    function update()
+    {
+        $this->modal = new DatabaseModel();
+
+        helper(['form', 'url']);
+
+        $rules = [
+            'prenomClient'          => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Veuillez entrer un prenom valide.',
+                ]
+            ],
+            'mail'          => [
+                'rules' => 'required|valid_email',
+                'errors' => [
+                    'required' => 'Veuillez entrer un e-mail valide.',
+                    'valid_email' => 'Veuillez entrer un e-mail valide.',
+                ]
+            ],
+            'mdp'          => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Veuillez entrer un mot de passe valide.',
+                ]
+            ],
+
+
+
+        ];
+
+
+
+        $id = $this->request->getVar('id');
+
+        if ($this->validate($rules)) {
+
+            $data = [
+                'prenomClient' => $this->request->getVar('prenomClient'),
+                'nomClient' => $this->request->getVar('nomClient'),
+                'mail'  => $this->request->getVar('mail'),
+                'adresse'  => $this->request->getVar('adresse'),
+                'mdp'  => password_hash($this->request->getVar('mdp'), PASSWORD_DEFAULT)
+            ];
+
+            $this->modal->update($id, $data);
+
+            $session = \Config\Services::session();
+
+
+
+            return redirect()->to('dashboard');
+        } else {
+            $data['validation'] = $this->validator;
+
+            return view('user', $data);
+        }
     }
 }

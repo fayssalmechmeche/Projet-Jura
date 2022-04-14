@@ -7,10 +7,10 @@ use App\Models\DatabaseModel;
 
 class Inscription extends BaseController
 {
-    
+
     public function index()
     {
-        
+
         helper(['form']);
         return view('inscription');
     }
@@ -27,8 +27,8 @@ class Inscription extends BaseController
             'pass'      => 'required|min_length[6]|max_length[200]',
             'cpass'  => 'matches[pass]'
         ];
-          
-        if($this->validate($rules)){
+
+        if ($this->validate($rules)) {
             $model = new DatabaseModel();
             $data = [
                 'identifiant'     => $this->request->getVar('name'),
@@ -36,21 +36,14 @@ class Inscription extends BaseController
                 'nomClient'    => $this->request->getVar('nom'),
                 'prenomClient'    => $this->request->getVar('prenom'),
                 'mdp' => password_hash($this->request->getVar('pass'), PASSWORD_DEFAULT),
-                'Admin' =>0
+                'Admin' => 0
             ];
 
             $model->save($data);
             return redirect()->to('/connexion');
-        }else{
+        } else {
             $data['validation'] = $this->validator;
-            return view('inscription', $data);
+            return view(route_to('inscription'), $data);
         }
-          
     }
-
-    
-  
-    
-    
-    
 }

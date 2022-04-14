@@ -30,7 +30,9 @@ class Connexion extends BaseController
                 $ses_data = [
                     'idClient'       => $data['idClient'],
                     'nomClient'     => $data['nomClient'],
+                    'prenomClient'     => $data['prenomClient'],
                     'identifiant'    => $data['identifiant'],
+                    'adresse'    => $data['adresse'],
                     'Admin'         => $data['Admin'],
                     'logged_in'     => TRUE
                 ];
